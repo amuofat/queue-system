@@ -4,14 +4,15 @@ import { getDatabase, ref, runTransaction, onValue, set, push, get } from "https
 
 // TODO: Replace with your actual Firebase config keys
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  databaseURL: "https://YOUR_PROJECT_ID-default-rtdb.firebaseio.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyBGvXPEtG6VbTihVPAvgglnJEsIQTACOzk",
+  authDomain: "khenchela-queue.firebaseapp.com",
+  projectId: "khenchela-queue",
+  storageBucket: "khenchela-queue.firebasestorage.app",
+  messagingSenderId: "451510465069",
+  appId: "1:451510465069:web:ed57c9b2e690a5dd0e3ea4",
+  measurementId: "G-CPNC1C21HL"
 };
+
 
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
