@@ -2,21 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Kiosk - Generate Ticket</title>
+  <title>Kiosk - Take a Ticket</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="institution-header">
+    <div class="ar">مديرية مسح الأراضي و الحفظ العقاري - خنشلة</div>
+    <div class="fr">Cadastre & Conservation Foncière - Khenchela</div>
+  </div>
+
   <div class="kiosk-container">
-    <button id="btn-ticket" class="btn-huge">
-      <div class="ar">اضغط للحصول على تذكرة</div>
-      <div class="fr">Appuyez pour obtenir un ticket</div>
+    <h2 class="ar">اسحب تذكرتك</h2>
+    <h2 class="fr">Prenez votre ticket</h2>
+    <p style="color:var(--text-muted); margin:12px 0 24px;">Touch the button below / اضغط على الزر أدناه</p>
+
+    <button id="btn-ticket" class="btn-call" style="font-size:1.3rem; padding:24px 40px;">
+      🎫 Get Ticket / احصل على تذكرة
     </button>
-    <div id="ticket-display" class="ticket-display">
-      <div class="ar">رقمك</div>
-      <div class="fr">Votre Numéro</div>
-      <div id="ticket-number" style="font-size: 8rem;">--</div>
+
+    <div id="ticket-display">
+      <p class="ar">رقمك هو</p>
+      <p class="fr">Votre numéro est</p>
+      <div id="ticket-number">--</div>
     </div>
   </div>
+
   <script type="module" src="assets/js/kiosk.js"></script>
 </body>
 </html>
