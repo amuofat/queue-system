@@ -6,6 +6,7 @@ import { getDatabase, ref, runTransaction, onValue, set, push, get } from "https
 const firebaseConfig = {
   apiKey: "AIzaSyBGvXPEtG6VbTihVPAvgglnJEsIQTACOzk",
   authDomain: "khenchela-queue.firebaseapp.com",
+  databaseURL: "https://khenchela-queue-default-rtdb.firebaseio.com/",
   projectId: "khenchela-queue",
   storageBucket: "khenchela-queue.firebasestorage.app",
   messagingSenderId: "451510465069",
