@@ -1,0 +1,17 @@
+[
+  {
+    "type": "text",
+    "title_ar": "تحديثات الخدمات العقارية",
+    "title_fr": "Mises à jour des services immobiliers",
+    "body_ar": "يرجى تحضير بطاقة الهوية الوطنية والوثائق المطلوبة قبل الوصول إلى الشباك.",
+    "body_fr": "Veuillez préparer votre carte d'identité nationale et les documents requis avant d'arriver au guichet.",
+    "duration": 10000
+  },
+  {
+    "type": "image",
+    "mediaUrl": "https://images.unsplash.com/photo-1577412647305-991150c7d163?q=80&w=1920&auto=format&fit=crop",
+    "title_ar": "الرقمنة في خدمة المواطن",
+    "title_fr": "La numérisation au service du citoyen",
+    "duration": 8000
+  }
+]

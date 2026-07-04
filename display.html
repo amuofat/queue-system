@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TV Display - Queue & News</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="conn-banner" class="conn-banner">Connection Lost - Reconnecting...</div>
+  
+  <div class="institution-header">
+     <div class="ar">المديرية الجهوية للأملاك الوطنية بقسنطينة - خنشلة</div>
+     <div id="clock-display" style="font-size: 1.5rem; font-weight: bold;">00:00:00</div>
+     <div class="fr">Direction Régionale des Domaines de Constantine - Khenchela</div>
+  </div>
+
+  <div class="tv-layout">
+    <div class="zone-queue">
+      <div class="now-serving">
+        <h2 class="ar">الرقم الحالي</h2>
+        <h2 class="fr">NOW SERVING</h2>
+        <div id="disp-number" class="current-number">--</div>
+        <div id="disp-counter-ar" class="current-counter ar">--</div>
+        <div id="disp-counter-fr" class="current-counter fr">--</div>
+      </div>
+      
+      <div class="history-list">
+        <h3 style="margin-bottom: 15px;">Previous / السابق</h3>
+        <div id="history-container"></div>
+      </div>
+    </div>
+
+    <div class="zone-news" id="carousel-container">
+      <div class="ticker-wrap"><div class="ticker ar" id="ticker-text">مرحبا بكم في مديرية مسح الأراضي و الحفظ العقاري لولاية خنشلة - Bienvenue</div></div>
+    </div>
+  </div>
+  
+  <audio id="audio-alert" src="assets/sounds/alert.mp3" preload="auto"></audio>
+
+  <script type="module" src="assets/js/tts-utils.js"></script>
+  <script type="module" src="assets/js/display.js"></script>
+</body>
+</html>

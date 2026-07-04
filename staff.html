@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Staff Control Panel</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="staff-container">
+    <h2 class="ar">لوحة تحكم الموظفين | Panneau du Personnel</h2>
+    <hr style="margin: 15px 0;">
+    
+    <div class="controls">
+      <label>Counter / Guichet: </label>
+      <select id="counter-select">
+        <option value="counter1" data-ar="الشباك 1" data-fr="Guichet 1">Counter 1</option>
+        <option value="counter2" data-ar="الشباك 2" data-fr="Guichet 2">Counter 2</option>
+        <option value="counter3" data-ar="الشباك 3" data-fr="Guichet 3">Counter 3</option>
+      </select>
+    </div>
+
+    <div class="controls">
+      <button id="btn-call-next" class="btn-call">Call Next Number / نداء للرقم التالي</button>
+      <input type="number" id="manual-number" placeholder="Specific Number">
+      <button id="btn-call-manual">Call Manual / نداء يدوي</button>
+    </div>
+
+    <div>
+      <h3>Current Daily Queue Pool: <span id="pool-count">0</span></h3>
+    </div>
+  </div>
+  <script type="module" src="assets/js/staff.js"></script>
+</body>
+</html>
