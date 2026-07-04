@@ -5,9 +5,10 @@ const ticketDisplay = document.getElementById('ticket-display');
 const ticketNumberLabel = document.getElementById('ticket-number');
 
 btnTicket.addEventListener('click', async () => {
+  btnTicket.disabled = true; // prevent double-clicks
   const counterRef = ref(db, 'dailyCounter');
   const today = new Date().toISOString().split('T')[0];
-  
+
   try {
     const result = await runTransaction(counterRef, (data) => {
       if (!data || data.date !== today) {
@@ -23,6 +24,9 @@ btnTicket.addEventListener('click', async () => {
     }
   } catch (error) {
     console.error("Transaction failed: ", error);
+    alert("Error / خطأ — try again");
+  } finally {
+    btnTicket.disabled = false;
   }
 });
 
@@ -30,7 +34,7 @@ function showTicket(number) {
   btnTicket.style.display = 'none';
   ticketDisplay.style.display = 'block';
   ticketNumberLabel.innerText = number;
-  
+
   // Optional: Trigger print
   // window.print();
 
